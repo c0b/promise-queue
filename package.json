@@ -1,0 +1,36 @@
+{
+  "name": "promise-queue-es6",
+  "description": "promise queue run on node v6",
+  "version": "0.0.6",
+  "repository": "git://gitlab.com/c0b/promise-queue.git",
+  "engines": {
+    "node": ">= 6"
+  },
+  "keywords": [
+    "promise",
+    "queue",
+    "es6"
+  ],
+  "scripts": {
+    "test": "mocha --compilers js:babel-register",
+    "coverage": "babel-node ./node_modules/.bin/isparta cover --excludes '*test.js' _mocha -- -R spec"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.11.6",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "coveralls": "^2.11.12",
+    "isparta": "^4.0.0",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3"
+  },
+  "babel": {
+    "presets": [
+      "node6"
+    ]
+  }
+}

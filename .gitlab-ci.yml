@@ -1,0 +1,12 @@
+image: node:6
+
+cache:
+  paths:
+  - node_modules/
+
+all_tests:
+  script:
+   - npm install
+   - npm test
+   - npm run coverage
+   - bash <(curl -s https://codecov.io/bash) || true
