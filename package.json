@@ -1,0 +1,25 @@
+{
+  "name": "promise-queue-es6",
+  "description": "promise queue run on node v6",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "babel-node ./node_modules/.bin/isparta cover _mocha",
+    "coverage": "istanbul cover _mocha -- -R spec"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.11.6",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "isparta": "^4.0.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3"
+  },
+  "babel": {
+    "presets": [
+      "node6"
+    ]
+  }
+}
